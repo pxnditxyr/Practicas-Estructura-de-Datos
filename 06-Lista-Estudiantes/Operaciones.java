@@ -16,7 +16,7 @@ public class Operaciones {
 	public void mostrar (Lista lista) {
 		Nodo nodo = lista.primero;
 		while (nodo != null) {
-			System.out.println(nodo.dato.mostrar());
+			nodo.dato.mostrar();
 			nodo = nodo.sig;
 		}
 	}
