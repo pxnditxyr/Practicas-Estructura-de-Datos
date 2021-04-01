@@ -40,7 +40,7 @@ public class Racional {
 		int num = numerador + numerador2;
 		Racional r3 = new Racional(num, denominador);
 		cambio(r3);
-		System.out.println("La suma de los raciones es: " + r3.n + "/" + r3.d);
+		System.out.println("La suma de los racionales es: " + r3.n + "/" + r3.d);
 		return r3;
 	}
 
@@ -51,7 +51,7 @@ public class Racional {
 		int num = numerador - numerador2;
 		Racional r3 = new Racional(num, denominador);
 		cambio(r3);
-		System.out.println("La resta de los raciones es: " + r3.n + "/" + r3.d);
+		System.out.println("La resta de los racionales es: " + r3.n + "/" + r3.d);
 		return r3;
 	}
 
@@ -59,7 +59,7 @@ public class Racional {
 		int denominador = r1.d * r2.d;
 		int num = r1.n * r2.n;
 		Racional r3 = new Racional(num, denominador);
-		System.out.println("La multiplicacion de los raciones es: " + r3.n + "/" + r3.d);
+		System.out.println("La multiplicacion de los racionales es: " + r3.n + "/" + r3.d);
 		cambio(r3);
 		return r3;
 	}
@@ -69,7 +69,7 @@ public class Racional {
 		int num = r1.n * r2.d;
 		Racional r3 = new Racional(num, denominador);
 		cambio(r3);
-		System.out.println("La division de los raciones es: " + r3.n + "/" + r3.d);
+		System.out.println("La division de los racionales es: " + r3.n + "/" + r3.d);
 		return r3;
 	}
 	public void cambio (Racional rx) {
