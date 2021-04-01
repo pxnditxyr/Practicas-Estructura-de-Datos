@@ -3,21 +3,21 @@ public class Lista
 	Nodo primero;
 
 	public Lista () {
-		primero=null;
+		primero = null;
 	}
 
 	public void inicializar () {
-		primero=null;
+		primero = null;
 	}
 
 	public boolean listaVacia() {
-		return primero==null;
+		return primero == null;
 	}
 
-	public void insertar(String x) {
-		Nodo nuevo=new Nodo(x);
-		nuevo.sig=primero;
-		primero=nuevo;
+	public void insertar(Estudiante x) {
+		Nodo nuevo = new Nodo(x);
+		nuevo.sig = primero;
+		primero = nuevo;
 	}
 
 	public void eliminar() {
@@ -26,7 +26,7 @@ public class Lista
 		}
 	}
 
-	public void insertar2(String x, Nodo pos) {
+	public void insertar2(Estudiante x, Nodo pos) {
 		Nodo nuevo=new Nodo(x);
 		nuevo.sig=pos.sig;
 		pos.sig=nuevo;

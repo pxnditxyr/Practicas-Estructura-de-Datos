@@ -5,9 +5,9 @@ public class Principal {
 		Lista lista = new Lista();
 		op.insertarN(lista);
 		op.mostrar(lista);
-		//System.out.println("Eliminando ultimo nodo");
-		//op.eliminarUltimoNodo(lista);
-		//op.mostrar(lista);
+		System.out.println("Eliminando ultimo nodo");
+		op.eliminarUltimoNodo(lista);
+		op.mostrar(lista);
 		System.out.println("Introduzca el dato del nodo a buscar: ");
 		String x = Leer.dato();
 		System.out.println("Introduzca el dato del nodo a introducir: ");
