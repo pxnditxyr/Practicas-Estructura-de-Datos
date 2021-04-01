@@ -14,22 +14,32 @@ public class Operaciones {
 
 	public void mostrar (Lista lista) {
 		Nodo nodo = lista.primero;
+		System.out.println("Mostrando");
 		while (nodo != null) {
 			System.out.println(nodo.dato);
 			nodo = nodo.sig;
 		}
+		System.out.println("----------");
 	}
 
 
 	public void insertarPos (Lista lista, String x, String dato) {
 		if (lista.listaVacia()) {
-			lista.insertar(x);
+			lista.insertar(dato);
+			System.out.println("Su lista esta vacia se insertara directamente");
 		} else {
 			Nodo nodo = lista.primero;
-			while (nodo.sig.sig.dato.equals(x)) {
-				nodo = nodo.sig;
+			if (nodo.sig != null) {
+				System.out.println("Cono");
+				while (nodo.sig.sig.dato.equals(x)) {
+					nodo = nodo.sig;
+				}
+				lista.insertar2(dato, nodo);
+			} else {
+				System.out.println("Entra");
+				lista.insertarAlInicio(dato);
 			}
-			lista.insertar2(dato, nodo);
+			
 		}
 	}
 

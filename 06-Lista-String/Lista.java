@@ -20,6 +20,12 @@ public class Lista
 		primero=nuevo;
 	}
 
+	public void insertarAlInicio(String x) {
+		Nodo nuevo = new Nodo(x);
+		primero.sig = nuevo;
+		System.out.println("Sig" + primero.sig.dato);
+	}
+
 	public void eliminar() {
 		if(!listaVacia()) {
 			primero=primero.sig;
@@ -35,4 +41,6 @@ public class Lista
 	public void eliminar2(Nodo pos) {
 		pos.sig=pos.sig.sig;
 	}
+
+
 }
