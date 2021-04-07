@@ -26,6 +26,7 @@ public class Operaciones {
 			pilaAux.eliminar();
 			pila.insertar(vehiculo);
 		}
+		System.out.println("----------------------------");
 	}
 
 	/*public void contarMarca(Pila pila) {
@@ -106,7 +107,7 @@ public class Operaciones {
 		while(!pilaAux.pilaVacia()) {
 			vehiculo = pilaAux.ver();
 			pilaAux.eliminar();
-			if ( !(vehiculo.equals(marca) && vehiculo.modelo < 1990) )
+			if ( !(vehiculo.marca.equals(marca) && vehiculo.modelo < 1990) )
 				pila.insertar(vehiculo);
 		}
 	}

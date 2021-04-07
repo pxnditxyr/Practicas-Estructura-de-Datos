@@ -9,7 +9,7 @@ public class Principal {
 		op.mostrar(pila);
 		//op.contarMarca(pila);
 		System.out.println("Se contaran los vehiculos mas antiguos");
-		op.vehiculoMasAntiguo(pila);
+		op.cantidadVehiculosAntuguos(pila);
 		op.mostrar(pila);
 		System.out.println("Se eliminara una marca dada con modelo < a 1990");
 		System.out.println("Inserte la marca");
