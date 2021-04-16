@@ -17,8 +17,10 @@ public class Vehiculo {
 		modelo = Leer.datoInt();
 	}
 	public void mostrar() {
+		System.out.println("-------------------------");
 		System.out.println("Placa  = " + placa );
 		System.out.println("Marca  = " + marca );
 		System.out.println("Modelo = " + modelo);
+		System.out.println("-------------------------");
 	}
 }
