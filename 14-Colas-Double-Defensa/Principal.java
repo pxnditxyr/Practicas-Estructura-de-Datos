@@ -7,6 +7,7 @@ public class Principal {
 		cola = operaciones.insertarN(cola);
 		cola = operaciones.mostrar(cola);
 		cola = operaciones.cantidadPositivos(cola);
+		System.out.println("Eliminando nodos negativos");
 		cola = operaciones.eliminaNegativos(cola);
 		cola = operaciones.mostrar( cola );
 		cola = operaciones.insertarAlFrente(cola);
