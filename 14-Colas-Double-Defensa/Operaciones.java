@@ -19,6 +19,7 @@ class Operaciones {
 		colaux.frente = cola.frente;
 		colaux.fin = cola.frente;
 		double dato;
+		System.out.println("");
 		System.out.println("----------------------------");
 		while(!cola.colaVacia()) {
 			dato = cola.ver();
