@@ -1,16 +1,16 @@
-class Nodo {
+public class Nodo {
 
 	Nodo hizq, hder;
 	int clave;
-	String dato;
+	double dato;
 
 	public Nodo() {
 		hizq = null;
 		hder = null;
-		dato = null;
+		dato = 0;
 		clave = 0;
 	}
-	public Nodo(int clave, String dato) {
+	public Nodo(int clave, double dato) {
 		hizq = null;
 		hder = null;
 		this.dato = dato;

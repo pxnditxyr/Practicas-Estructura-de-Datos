@@ -7,9 +7,9 @@ public class Principal {
 		arbol = op.insertarN( arbol );
 		System.out.println("\nPRE-ORDEN(Todos)\n");
 		op.preorden( arbol.raiz );
-		System.out.println("\nSIMETRICO(Con clave impar)\n");
+		System.out.println("\nSIMETRICO(Con dato positivo)\n");
 		op.simetrico( arbol.raiz );
-		System.out.println("\nPOS-ORDEN(Con clave par)\n");
+		System.out.println("\nPOS-ORDEN(Con clave impar y dato negativo)\n");
 		op.posorden( arbol.raiz );
 		System.out.println("\nBUSCAR CLAVE");
 		System.out.print("Ingrese clave: ");

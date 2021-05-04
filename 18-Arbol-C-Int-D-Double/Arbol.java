@@ -13,7 +13,7 @@ public class Arbol
 		return raiz == null;
 	}
 
-	public void insertar(int clave, String dato) {
+	public void insertar(int clave, double dato) {
 
 		Nodo nuevo = new Nodo(clave, dato);
 
