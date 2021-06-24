@@ -1,6 +1,7 @@
 public class Operaciones {
 
 	double promNeg;
+    int cantidad;
 	Operaciones () {
 		promNeg = 0;
 	}
@@ -63,15 +64,17 @@ public class Operaciones {
         if ( promNeg == 0 ) {
             System.out.println( "No se encontro negativos en su arbol" );
         } else {
-            System.out.println("El promedio de negativos es=" + promNeg);
+            System.out.println("El promedio de negativos es=" + ( promNeg / cantidad ) );
         }
     }
 
 	public void obtenerPromNeg ( Nodo p ) {
 
 		if( p != null ) {
-			if ( p.dato < 0 )
-				promNeg += p.dato;
+            if ( p.dato < 0 ) {
+                promNeg += p.dato;
+                cantidad++;
+            }
 			obtenerPromNeg(p.hizq);
 			obtenerPromNeg(p.hder);
 		}
