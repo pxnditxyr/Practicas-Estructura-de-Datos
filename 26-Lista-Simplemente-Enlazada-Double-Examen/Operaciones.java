@@ -7,7 +7,7 @@ public class Operaciones {
 		double d;
 		for (int i = 1; i <= n;i++) {
 			System.out.print("Dato= ");
-			d = Leer.datoInt();
+			d = Leer.datoDouble();
 			lista.insertar(d);
 		}
 	}
